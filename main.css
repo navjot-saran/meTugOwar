@@ -59,7 +59,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
-  width: calc(800px / 4);
+  width: calc(200px / 4);
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20%;
@@ -75,7 +75,7 @@ body {
   }
   to
   {
-    background-position: 800px;
+    background-position: 200px;
   }
 }
 
