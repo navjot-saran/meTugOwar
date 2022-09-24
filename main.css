@@ -40,17 +40,16 @@ body {
 #btn1 {
   background-color: Transparent;
   border: none;
-  background-image: url(assets/image-4.png);
+  background-image: url(assets/hand2.png);
   background-size: contain;
+  background-repeat: no-repeat;
   height: 200px;
-  width: calc(1536px / 4);
+  width: 200px;
   margin-top: 20px;
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20%;
   padding-bottom: 20%;
-  animation: animateHand 1s step(4) infinite;
-
 }
 
 #btn2 {
