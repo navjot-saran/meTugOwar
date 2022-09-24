@@ -53,11 +53,7 @@ body {
 }
 
 #btn2 {
-  background-color: Transparent;
-  border: none;
   background-image: url(assets/image-4.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 200px;
   width: calc(800px / 4);
   padding-left: 20%;
