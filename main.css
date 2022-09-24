@@ -53,6 +53,8 @@ body {
 }
 
 #btn2 {
+  background-color: Transparent;
+  border: none;
   background-image: url(assets/image-4.png);
   height: 200px;
   width: calc(800px / 4);
