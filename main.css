@@ -55,15 +55,28 @@ body {
 #btn2 {
   background-color: Transparent;
   border: none;
-  background-image: url(assets/hand2.png);
+  background-image: url(assets/image-4.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
-  width: 200px;
+  width: calc(1536px / 4);
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20%;
   padding-bottom: 20%;
+  animation: animateHand 1s step(4) infinite;
+}
+
+@keyframes animateHand
+{
+  from
+  {
+    background-position: 0;
+  }
+  to
+  {
+    background-position: 1536px;
+  }
 }
 
 #ropeKnot{
