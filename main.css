@@ -40,9 +40,8 @@ body {
 #btn1 {
   background-color: Transparent;
   border: none;
-  background-image: url(assets/hand2.png);
+  background-image: url(assets/image-4.png);
   background-size: contain;
-  background-repeat: no-repeat;
   height: 200px;
   width: 200px;
   margin-top: 20px;
