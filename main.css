@@ -37,14 +37,15 @@ body {
   height: 100px;
 }
 
-#btn1 {
+.firstbuttoon
+{
   background-color: Transparent;
   border: none;
-  background-image: url(assets/hand1.png);
+  background-image: url(assets/image-4.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
-  width: 200px / 4;
+  -ms-zoom-animation: calc(3464px/4);
   margin-top: 20px;
   padding-left: 20%;
   padding-right: 20%;
@@ -52,19 +53,16 @@ body {
   padding-bottom: 20%;
 }
 
-#btn2 {
-  background-color: Transparent;
+.buttoon
+{
   border: none;
   background: url(assets/image-4.png);
-  background-repeat: no-repeat;
+  background-size: contain;
   height: 200px;
-  width: calc(200px / 4);
-  transform: perspective(50px) rotateX(-25deg) translateY(-50px);
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  animation: animateHand 0.5s step(4) infinite;
+  width: calc(3464px / 4);
+  position: relative;
+  animation: animateHand 1s step(4) infinite;
+  overflow: hidden;
 }
 
 @keyframes animateHand
@@ -75,7 +73,7 @@ body {
   }
   to
   {
-    background-position: 200px;
+    background-position: 3464px;
   }
 }
 
