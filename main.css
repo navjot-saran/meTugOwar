@@ -59,6 +59,7 @@ body {
   background-repeat: no-repeat;
   height: 200px;
   width: calc(200px / 4);
+  transform: perspective(50px) rotateX(-25deg) translateY(-150px);
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 20%;
