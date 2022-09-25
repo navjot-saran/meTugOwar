@@ -1,102 +1,89 @@
-
-/* css selector for all elements */
-body {
-  background-color: green;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.app-wrapper{
-  display: flex;
-  justify-content: center;
-}
-
-
-.button-div {
-  background-image: url(assets/grass.jpg);
-  background-size:400px 800px ;
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(assests/grass.jpg);
+  background-size:375px 812px ;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  resize:none;
-  width:400px;
-  height:800px;
+  background-position: center top; 
+  z-index: -1;
+  
 
 }
+/*
+APP CONTAINER FLEXBOX POSTIONING
+********************************
+*/
+.container
+{
+  display: flex;
+  /* position: relative; */
+  justify-content: center;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
 
-#fullscreenbtn{
-  background-color: Transparent;
+
+/*
+ROPE STYLES
+*******************************************
+*/
+#rope
+{
+  position: relative;
+  width: auto;
+  height: auto;
   border: none;
-  background-image: url(assets/fullscreenbtn.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 20px;
+  padding: 0px;
+  top: 150px;
+  right: 115px;
+  z-index: 1;
+  transform: scale(1,1.5);
+}
+
+#ropeKnot
+{
+  position: relative;
   width: 100px;
   height: 100px;
+  padding: 0px;
+  border: none;
+  top: 300px;
+  right: 183px;
+  z-index: 2;
+  /* transform: scale(0.025,0.025); */
 }
 
-.firstbuttoon
-{
-  background-color: Transparent;
-  border: none;
-  background-image: url(assets/image-4.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 200px;
-  -ms-zoom-animation: calc(3464px/4);
-  margin-top: 20px;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 20%;
-  padding-bottom: 20%;
-}
 
-.buttoon
+/*
+HAND ANIMATION STYLES 
+*******************************************
+*/
+.hand-animate-btn1
 {
-  border: none;
-  background: url(assets/image-4.png);
-  background-size: contain;
-  height: 200px;
-  -ms-zoom-animation: calc(3464px/4);
   position: relative;
-  animation: animateHand 1s step(4) infinite;
-  overflow: hidden;
+  top: -50px;
+  /* transform: translate(-50%, -50%); */
+  width: calc(674px / 3);
+  height: 232px;
+  transform: scale(0.5,0.5);
+  background: url(/assets/image-4.png);
+  animation: animate 1s steps(3) infinite;
 }
 
-@keyframes animateHand
+@keyframes animate
 {
-  from
+  from 
   {
-    background-position: 0;
+      background-position: 0;
   }
+
   to
   {
-    background-position: 3464px;
+      background-position: 674px;
   }
 }
 
-#ropeKnot{
-    width: 80px;
-    height:80px;
-    position:relative;
-    top: 110px;
-    z-index: 2;
-    bottom: initial;
-}
- 
-#rope{
-  width: 20px;
-  height:200px;
-  position:relative;
-  bottom: 30px;
-}
-.dot{
-  background-color: red;
-  width:5rem;
-  height:5rem;
-  border-radius: 50%;
-  position:absolute;
-  transform: translate(-50%, -50%);
-}
+
+/*
+*******************************************
+*/
