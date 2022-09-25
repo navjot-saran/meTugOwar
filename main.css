@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url(assests/grass.jpg);
+  background-image: url(assets/grass.jpg);
   background-size:375px 812px ;
   background-repeat: no-repeat;
   background-position: center top; 
@@ -66,7 +66,7 @@ HAND ANIMATION STYLES
   width: calc(674px / 3);
   height: 232px;
   transform: scale(0.5,0.5);
-  background: url(/assets/image-4.png);
+  background: url(/assets/hands.png);
   animation: animate 1s steps(3) infinite;
 }
 
