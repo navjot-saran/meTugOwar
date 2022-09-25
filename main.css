@@ -59,7 +59,7 @@ body {
   background: url(assets/image-4.png);
   background-size: contain;
   height: 200px;
-  width: calc(3464px / 4);
+  -ms-zoom-animation: calc(3464px/4);
   position: relative;
   animation: animateHand 1s step(4) infinite;
   overflow: hidden;
