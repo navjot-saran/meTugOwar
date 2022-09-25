@@ -55,8 +55,7 @@ body {
 #btn2 {
   background-color: Transparent;
   border: none;
-  background-image: url(assets/image-4.png);
-  background-size: contain;
+  background: url(assets/image-4.png);
   background-repeat: no-repeat;
   height: 200px;
   width: calc(200px / 4);
